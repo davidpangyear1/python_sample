@@ -1,4 +1,4 @@
-# python-sample                                                                                                                                                                                             
+# python_sample                                                                                                                                                                                             
 This repository shows a sample standalone python program with some good practices.
 This program is supposed to be packaged and run as a standalone program.
 This program is NOT supposed to be installed by pip.
