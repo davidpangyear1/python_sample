@@ -7,6 +7,27 @@ References:
 1. https://python-packaging.readthedocs.io/en/latest/minimal.html
 2. https://help.github.com/articles/fetching-a-remote/ 
 
+## package and run
+It is supposed to package a project into a wheel files. (Few years ago, egg files are preferred)
+However, the documentations of python wheel are sadly few.
+And it is impossible to import/run python wheel without pip install. (at least, no direct documentations found)
+So, we will still package it into a python egg.
+To package your project, execute:
+>python setup.py bdist_egg
+
+The following folders are created:
+build/
+dist/
+python_sample.egg-info/
+
+Your file is at, for example,
+dist/python_sample-1.0-py2.7.egg
+
+You can directly run it by
+python python_sample-1.0-py2.7.egg
+
+Then, it will search for the __main__.py file and execute it.
+
 ## github integration
 View https://help.github.com/articles/fetching-a-remote/ for more information about git.
 
