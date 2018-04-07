@@ -9,13 +9,22 @@ References:
 3. https://docs.python.org/3/library/configparser.html
 4. https://docs.python.org/3/howto/logging.html#configuring-logging
 
+## Development procedure
+Change the *__main__.py* if necessary.
+Write the main source codes in *./python_sample*
+package it by calling *package.sh*
+deploy it by calling *deploy.sh* (it will copy the egg into install/bin/)
+To run it, cd into *install/*, then call *run.sh*
+
 ## Directory structure
 
 ### install environment
 *deploy.sh*
+
 It deploys the egg to *install/*
 
 *install/*
+
 It contains a small environment that can runs the egg
 
 ### Config files
@@ -24,6 +33,10 @@ It contains a small environment that can runs the egg
 It contains the config files.
 
 ### Files about building eggs
+*package.sh*
+
+Helper script that build eggs
+
 *setup.py*
 
 It contains the settings for building egg.
