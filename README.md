@@ -6,8 +6,22 @@ This program is NOT supposed to be installed by pip.
 References:
 1. https://python-packaging.readthedocs.io/en/latest/minimal.html
 2. https://help.github.com/articles/fetching-a-remote/ 
+3. https://docs.python.org/3/library/configparser.html
+4. https://docs.python.org/3/howto/logging.html#configuring-logging
 
 ## Directory structure
+
+### install environment
+*deploy.sh*
+It deploys the egg to *install/*
+
+*install/*
+It contains a small environment that can runs the egg
+
+### Config files
+*config/*
+
+It contains the config files.
 
 ### Files about building eggs
 *setup.py*
